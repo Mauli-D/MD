@@ -1,0 +1,277 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  background-color: #252934;
+  border-bottom: 3px solid #04c2c9;
+  text-align: left;
+  width: 100%; 
+}
+
+#wrapper {
+  overflow: hidden;
+  height:100%;
+  width:100%;
+  text-align: center;
+  display: table;
+  position:absolute;
+}
+
+#title {
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 999;
+}
+
+#title h2 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "museo-slab";
+}
+
+#title h3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: "museo-sans";
+  font-weight: 300
+}
+
+
+#wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1950px;
+  height: auto; 
+}
+@media only screen and (max-width: 649px) {
+
+#canvasdiv {
+  z-index: 1;
+  width: 100%;
+  height:400px;
+}
+}
+#canvas {
+  z-index: 1;
+  width:1950px;
+  height:600px;
+}
+#canvasbg {
+  z-index: -10;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+  width:1950px;
+  height:600px;
+}
+
+.text {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.aboutimg {
+  margin-left: 25%;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/* Bar Graph Horizontal */
+.bar {
+  background: #ecb807;
+  width: 0;
+  margin: .25em 0;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background .2s;
+  /* -webkit-transform: translate3d(0, 0, 0); */
+  clear: both;
+}
+.label {
+  font-size: .75em;
+  padding: 1em;
+  background: #3d3d3d;
+  width: 13em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+ .count {
+  position: absolute;
+  right: .25em;
+  top: .75em;
+  padding: .15em;
+  font-size: .75em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif; 
+ }
+ 
+ .hex {
+  margin-top: 30px;
+  width: 104px;
+  height: 60px;
+  background-color: #27aae1;
+  border-color: #27aae1;
+  position: relative;
+  display: inline-block;
+}
+.hex:before {
+  content: " ";
+  width: 0; height: 0;
+  border-bottom: 30px solid;
+  border-color: inherit;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  position: absolute;
+  top: -30px;
+}
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  border-top: 30px solid;
+  border-color: inherit;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.icon-multi-task {
+  margin-left: 17%;
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url("../img/mt.png");
+  background-size: cover;
+}
+
+.icon-creative {
+  margin-left: 21%;
+  margin-top: 6%;
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 55px;
+  background: url("../img/creative.png");
+  background-size: cover;
+}
+
+.icon-organized {
+  margin-left: 26%;
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: url("../img/organized.png");
+  background-size: cover;
+}
+
+.icon-quick-lerner {
+  margin-left: 24%;
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: url("../img/quicklearner.png");
+  background-size: cover;
+}
+
+input[type=text], input[type=email], textarea {
+  font-size: 14pt;
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+  background-color: #1e242c;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #252934;
+}
+
+input[type=submit]:hover {
+  background-color: #04c2c9;
+}
+
+.hr-main {
+  background: white; 
+  margin-top: 0px
+}
+
+.Footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contentsection {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contentsection-heading h2 {
+  font-size: 3rem;
+}
+
+.contentsection-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
