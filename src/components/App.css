@@ -1,47 +1,16 @@
-.App {
-  text-align: center;
-}
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 nav {
-  background-color: #252934;
-  border-bottom: 3px solid #04c2c9;
   text-align: left;
   width: 100%; 
+  padding: 0px;
+}
+.navbar{
+  padding: 0px;
+  background-color: #252934;
+  border-bottom: 3px solid #04c2c9;
 }
 
 #wrapper {
@@ -81,12 +50,11 @@ nav {
   height: auto; 
 }
 @media only screen and (max-width: 649px) {
-
-#canvasdiv {
-  z-index: 1;
-  width: 100%;
-  height:400px;
-}
+  #canvasdiv {
+    z-index: 1;
+    width: 100%;
+    height:400px;
+  }
 }
 #canvas {
   z-index: 1;
@@ -128,7 +96,7 @@ nav {
   margin: .25em 0;
   color: #fff;
   position: relative;
-  transition: width 2s, background .2s;
+  transition: width 2s, background 0s;
   /* -webkit-transform: translate3d(0, 0, 0); */
   clear: both;
 }
@@ -226,16 +194,32 @@ nav {
   background-size: cover;
 }
 
-input[type=text], input[type=email], textarea {
-  font-size: 14pt;
+
+
+
+
+
+
+input, textarea {
+  border: none;
+  padding: 1rem;
   width: 100%;
-  padding: 12px;
-  border-bottom: 1px solid #fff;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  resize: vertical;
-  background-color: #1e242c;
+  height: 40%;
+  transition: 200ms;
+  background: #252934;
+}
+
+input[type=text], input[type=email], textarea {
+  border-bottom: 1px solid #fafafa;
+  background: transparent;
+  color: #fafafa;
+  font-size: 1.0rem;
+  box-shadow: none;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
 }
 
 input[type=submit] {
@@ -243,13 +227,36 @@ input[type=submit] {
   padding: 12px 20px;
   font-weight: bold;
   border: 2px solid white;
-  border-radius: 4px;
   cursor: pointer;
-  background-color: #252934;
+  background: #252934;
+  margin-top: 1rem;
+  width: auto;
+  font-size: 1.0rem;
 }
 
 input[type=submit]:hover {
-  background-color: #04c2c9;
+  background: #04c2c9;
+  color: black;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:not(output):focus,
+input[type="email"]:not(output):focus,
+textarea:focus {
+  border-bottom: 1px solid #04c2c9;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  cursor: pointer;
+  color: #fff;
+  background: #04c2c9;
+  border: #04c2c9;
+}
+
+::placeholder {
+  color: #fafafa;
 }
 
 .hr-main {
@@ -263,7 +270,7 @@ input[type=submit]:hover {
 }
 
 .contentsection {
-  padding-top: 2rem;
+  padding-top: 55px;
   padding-bottom: 2rem;
 }
 
@@ -274,4 +281,19 @@ input[type=submit]:hover {
 .contentsection-heading h3 {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+
+.project{
+    border: #04c2c9 4px solid;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border: 5px solid #07cb79;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #252934;
 }
