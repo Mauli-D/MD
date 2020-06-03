@@ -14,22 +14,22 @@ const Nav = props => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav js-nav">
             <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded page-scroll" href="#page-top">Home</a>
+              <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top">Home</a>
             </li>
             <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded page-scroll" href="#about">About</a>
+              <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
             </li>
             <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded page-scroll" href="#skills">Skills</a>
+              <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
             </li>
             <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded page-scroll" href="#resume">Experience</a>
+              <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#resume">Experience</a>
             </li>
             {/* <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded page-scroll" href="#portfolio">Portfolio</a>
+              <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li> */}
             <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded page-scroll" href="#contact">Contact</a>
+              <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
+import $ from 'jquery'
 import './components/App.css'
 import './components/portfolio.css'
 import Nav from './components/navbar/navbar';
@@ -46,6 +47,40 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    setTimeout(function start (){
+  
+      $('.bar').each(function(i){  
+        var $bar = $(this);
+        $(this).append('<span class="count"></span>')
+        setTimeout(function(){
+          $bar.css('width', $bar.attr('data-percent'));      
+        }, i*100);
+      });
+    
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).parent('.bar').attr('data-percent')
+        }, {
+            duration: 1000,
+            easing: 'linear',
+            step: function (now) {
+                $(this).text(Math.ceil(now) +'%');
+            }
+        });
+    });
+
+    $('#mainNav').find('a').click(function() {
+      $("a").removeClass("active focus");
+      $(this).toggleClass("active");
+   });
+
+    $('.collapse ul li a').click(function() {
+        /* always close responsive nav after click */
+        $('.navbar-toggler:visible').click();
+    });
+    
+    }, 100)
+    
   // min and max radius, radius threshold and percentage of filled circles
   var canvas = document.getElementById('canvas')
 

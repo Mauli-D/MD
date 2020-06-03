@@ -12,10 +12,11 @@ class ContactForm extends Component {
   }
   handleSubmit(e) {
       e.preventDefault()
-      const {email, message } = this.state
+      const {name, email, message } = this.state
       let templateParams = {
-        from_name: email,
-        to_name: 'maulika26@gmail.com',
+        from_name: name,
+        from_email: email,
+        to_name: 'Maulika',
         message_html: message,
       }
       emailjs.send(
@@ -25,11 +26,10 @@ class ContactForm extends Component {
         'user_wcuXz0TuZLPcDCv7Yn4TQ'
       ).then((response) => {
         ReactDOM.render(<div class="alert alert-success alert-dismissible fade show">
-        <strong>Success!</strong>Your message has been sent successfully.</div>, document.getElementById('success'));
+        <strong>Success! </strong>Your message has been sent successfully.</div>, document.getElementById('success'));
         },
         (error) => {
-          ReactDOM.render(<div class="alert alert-danger alert-dismissible fade show">
-          <strong>Error!</strong>A problem has been occurred while sending message.</div>, document.getElementById('Error'));
+          console.log("error");
         }
       )
       this.resetForm()
@@ -53,6 +53,7 @@ class ContactForm extends Component {
           <div className="row"> 
             <div className="col-6 mx-auto text-center">
               <h2 className="text-uppercase text-white">Contact</h2>
+              <div id="success" className="p-3"></div>
               <form onSubmit={this.handleSubmit.bind(this)}>
                 <input type="text" name="name" value={this.state.name}
                   onChange={this.handleChange.bind(this, 'name')} placeholder="Name" required/>
@@ -61,8 +62,6 @@ class ContactForm extends Component {
                 <textarea type="textarea" name="message" value={this.state.message}
                   onChange={this.handleChange.bind(this, 'message')} placeholder="Message.." />
                 <input className="button" type="submit" id="submit" value="SUBMIT" />
-                <div id="success" className="p-3"></div>
-                <div id="error" className="p-3"></div>
               </form>
             </div>
           </div>
