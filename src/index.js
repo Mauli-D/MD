@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
+// import jQuery from 'jquery'
 import $ from 'jquery'
 import './components/App.css'
 import './components/portfolio.css'
+// import ScrollUpButton from "react-scroll-up-button";
 import Nav from './components/navbar/navbar';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import About from './components/about/about';
 import Skill from './components/skill/skill';
 import Resume from './components/resume/resume';
-// import Portfolio from './components/portfolio/portfolio';
+import ScrollUpButton from './components/ScrollBar/ScrollBar';
 import Contact from './components/contact/contact';
-import ScrollUpButton from "react-scroll-up-button";
 
 
 class App extends React.Component {
@@ -40,15 +41,14 @@ class App extends React.Component {
         <Resume />
         {/* <Portfolio /> */}
         <Contact />
-        <ScrollUpButton style={{padding:'5px'}} />
         <Footer />
+        <ScrollUpButton />
       </React.Fragment>
     );
   }
 
-  componentDidMount() {
+  componentDidMount() { 
     setTimeout(function start (){
-  
       $('.bar').each(function(i){  
         var $bar = $(this);
         $(this).append('<span class="count"></span>')
@@ -57,16 +57,23 @@ class App extends React.Component {
         }, i*100);
       });
     
-    $('.count').each(function () {
+      $('.count').each(function () {
         $(this).prop('Counter',0).animate({
-            Counter: $(this).parent('.bar').attr('data-percent')
-        }, {
-            duration: 1000,
-            easing: 'linear',
-            step: function (now) {
-                $(this).text(Math.ceil(now) +'%');
-            }
-        });
+          Counter: $(this).parent('.bar').attr('data-percent')
+        },{
+          duration: 1000,
+          easing: 'linear',
+          step: function (now) {
+            $(this).text(Math.ceil(now) +'%');
+          }
+      });
+    });
+
+    $('a[href="#"]').click(function(event) {
+      event.preventDefault();
+      $('html,body').animate({
+        scrollTop: $(this.hash).offset().top - 50
+      }, 850);
     });
 
     $('#mainNav').find('a').click(function() {

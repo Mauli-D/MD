@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
 
-
 nav {
   text-align: left;
   width: 100%; 
@@ -98,6 +97,11 @@ nav {
   background-size: cover;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  .aboutimg {
+    margin-left: 16%;
+  }
+}
 
 /* Bar Graph Horizontal */
 .bar {
@@ -111,10 +115,10 @@ nav {
   clear: both;
 }
 .label {
-  font-size: .75em;
+  font-size: 10px;
   padding: 1em;
   background: #3d3d3d;
-  width: 13em;
+  width: 12em;
   display: inline-block;
   position: relative;
   z-index: 2;
@@ -126,9 +130,9 @@ nav {
  .count {
   position: absolute;
   right: .25em;
-  top: .75em;
+  top: 9px;
   padding: .15em;
-  font-size: .75em;
+  font-size: 10px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif; 
  }
@@ -146,19 +150,19 @@ nav {
   content: " ";
   width: 0; height: 0;
   border-bottom: 30px solid;
-  border-color: inherit;
+  border-color: #27aae1;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
   position: absolute;
-  top: -30px;
+  top: -29px;
 }
 .hex:after {
   content: "";
   width: 0;
   position: absolute;
-  bottom: -30px;
+  bottom: -29px;
   border-top: 30px solid;
-  border-color: inherit;
+  border-color: #27aae1;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
