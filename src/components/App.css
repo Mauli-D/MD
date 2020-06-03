@@ -150,7 +150,7 @@ nav {
   content: " ";
   width: 0; height: 0;
   border-bottom: 30px solid;
-  border-color: #27aae1;
+  border-color: inherit;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
   position: absolute;
@@ -162,7 +162,7 @@ nav {
   position: absolute;
   bottom: -29px;
   border-top: 30px solid;
-  border-color: #27aae1;
+  border-color: inherit;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
