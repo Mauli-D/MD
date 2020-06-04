@@ -51,7 +51,7 @@ class ContactForm extends Component {
       <section id="contact" className="contentsection">
         <div className="container">
           <div className="row"> 
-            <div className="col-6 mx-auto text-center">
+            <div className="col-6 mx-auto text-center custom-col">
               <h2 className="text-uppercase text-white">Contact</h2>
               <div id="success" className="p-3"></div>
               <form onSubmit={this.handleSubmit.bind(this)}>

@@ -89,7 +89,7 @@ nav {
 }
 
 .aboutimg {
-  margin-left: 25%;
+  margin-left: 26%;
   width: 250px;
   height: 250px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/about.jpg");
@@ -97,9 +97,58 @@ nav {
   background-size: cover;
   text-align: center;
 }
+/*ipad Pro */
+/* Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .aboutimg {
+      margin-left: 20%;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .aboutimg {
+      margin-left: 26%;
+    }
+}
+/*ipad*/
+/*landscap*/
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+  .aboutimg{
+    margin-left: 21%;
+  }
+}
+
+/*potrait*/
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+  .aboutimg{
+    margin-left: 32%;
+  }
+ }  */
+
+
+@media only screen and (max-width: 920px) {
+  .aboutimg{
+    margin-left: 32%; /*21%*/
+  }
+}
 @media only screen and (max-width: 600px) {
   .aboutimg {
-    margin-left: 16%;
+    margin-left: 13%;
   }
 }
 
@@ -211,11 +260,12 @@ nav {
   background-size: cover;
 }
 
-
-
-
-
-
+@media only screen and (max-width: 920px) {
+  .custom-col {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
 
 input, textarea {
   border: none;
