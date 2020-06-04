@@ -13,6 +13,42 @@ const Resume = props => {
               <div>
                 <div className="row pt-3">
                   <div className="col-6 mb-2 mx-auto">
+                    <h4>Front-end Developer</h4>
+                  </div>
+                  <div className="col-6 mb-2 mx-auto text-right">
+                    <div className="date">
+                      <i className="icon-calendar"></i> May 2018 - August 2018
+                    </div>
+                  </div>
+                </div>
+                <hr className="hr-main" />
+                <h4><i className="icon-briefcase"></i> Print1</h4>
+                <div>
+                  <p> <i className="icon-pin"></i>
+                    <i> Worked in different designing tools like Photoshop, Illustrator to create design.</i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Made designs using coding in HTML5/CSS3 and JavaScript for websites.</i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Worked with a group of planners and designers to satisfy customers' needs and made Responsive web design.</i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Fixed existing bugs in application.</i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Learned how to work under pressure.</i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Documented recommended system changes through ticketing system.</i>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li className="bg-dark mb-4 p-3">
+              <div>
+                <div className="row pt-3">
+                  <div className="col-6 mb-2 mx-auto">
                     <h4>Software developer</h4>
                   </div>
                   <div className="col-6 mb-2 mx-auto text-right">
@@ -25,19 +61,25 @@ const Resume = props => {
                 <h4><i className="icon-briefcase"></i> Kalp Corporate</h4>
                 <div>
                   <p> <i className="icon-pin"></i>
-                    <i>Used HTML5, CSS, AngularJs, EmberJs and Git for API-based business website advancement.</i>
+                    <i> Used HTML5, CSS, AngularJs, EmberJs and Git for API-based business website advancement.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Help all individuals from the relegated office with everyday tasks and uncommon ventures. </i>
+                    <i> Participated in requirement gathering and analysis.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Worked with a group of planners and designers to satisfy customers' needs.</i>
+                    <i> Helped senior developers in complex design project for corporate clients.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Provide essential degrees of exertion related to work requests.</i>
+                    <i> Thoroughly studied and understood event module and its mechanism.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Communicate with area specialists, clients, and executives all through the product advancement lifecycle.</i>
+                    <i> Help all individuals from the relegated office with everyday tasks and uncommon ventures. </i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Provide essential degrees of exertion related to work requests.</i>
+                  </p>
+                  <p> <i className="icon-pin"></i>
+                    <i> Communicate with area specialists, clients, and executives all through the product advancement lifecycle.</i>
                   </p>
                 </div>
               </div>
@@ -58,16 +100,16 @@ const Resume = props => {
                 <h4><i className="icon-briefcase"></i> Atharva System</h4>
                 <div>
                   <p> <i className="icon-pin"></i>
-                    <i>Participate in scheduled events and Complete intern Group project(s), other duties as assigned.</i>
+                    <i> Participate in scheduled events and Complete intern Group project(s), other duties as assigned.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Perform troubleshoot and execution examination of code and frameworks.</i>
+                    <i> Perform troubleshoot and execution examination of code and frameworks.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Helped with backend development using Ruby on Rails, web development using HTML/CSS/JavaScript and database SQL.</i>
+                    <i> Helped with backend development using Ruby on Rails, web development using HTML/CSS/JavaScript and database SQL.</i>
                   </p>
                   <p> <i className="icon-pin"></i>
-                    <i>Strong passion demonstrated via energy levels, enthusiasm, creativity, and commitment.</i>
+                    <i> Strong passion demonstrated via energy levels, enthusiasm, creativity, and commitment.</i>
                   </p>
                 </div>
               </div>
