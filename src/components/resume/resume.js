@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = props => {
   return (
-    <section className="contentsection bg-light text-center" id="resume">
+    <section className="contentsection bg-light text-center" id="experience">
       <div className="contentsection-heading">
         <h1 className="text-uppercase mb-3">Work Experience</h1>
       </div>

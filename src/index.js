@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-// import jQuery from 'jquery'
 import $ from 'jquery'
 import './components/App.css'
 import './components/portfolio.css'
@@ -11,7 +10,7 @@ import Footer from './components/footer/footer';
 import About from './components/about/about';
 import Skill from './components/skill/skill';
 import Resume from './components/resume/resume';
-import ScrollUpButton from './components/ScrollBar/ScrollBar';
+// import ScrollUpButton from './components/ScrollBar/ScrollBar';
 import Contact from './components/contact/contact';
 
 
@@ -42,7 +41,7 @@ class App extends React.Component {
         {/* <Portfolio /> */}
         <Contact />
         <Footer />
-        <ScrollUpButton />
+        {/* <ScrollUpButton /> */}
       </React.Fragment>
     );
   }
@@ -68,18 +67,6 @@ class App extends React.Component {
           }
       });
     });
-
-    $('a[href="#"]').click(function(event) {
-      event.preventDefault();
-      $('html,body').animate({
-        scrollTop: $(this.hash).offset().top - 50
-      }, 850);
-    });
-
-    $('#mainNav').find('a').click(function() {
-      $("a").removeClass("active focus");
-      $(this).toggleClass("active");
-   });
 
     $('.collapse ul li a').click(function() {
         /* always close responsive nav after click */
@@ -121,7 +108,7 @@ class App extends React.Component {
 
   //populating the screen
   for (var i = 0; i < maxCircles * 2; i++) points.push(new Circle());
-  for (var i = 0; i < maxCircles; i++) pointsBack.push(new Circle(true));
+  for (i; i < maxCircles; i++) pointsBack.push(new Circle(true));
 
   //experimental vars
   var circleExp = 1,
@@ -231,7 +218,7 @@ class App extends React.Component {
         //if (Math.abs(circle.y) > yEscape || Math.abs(circle.x) > xEscape) arr[i].init(arr[i].background);
         drawCircle(ctx, circle);
       }
-      for (var i = 0; i < arr.length - 1; i++) {
+      for (i; i < arr.length - 1; i++) {
         for (var j = i + 1; j < arr.length; j++) {
           var deltax = arr[i].x - arr[j].x;
           var deltay = arr[i].y - arr[j].y;
