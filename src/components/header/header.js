@@ -12,8 +12,8 @@ const Header = props => {
                 <em>Computer Programmer | Full Stack Developer | Web Developer</em>
               </div>
               <div className="canvasdiv">
-              <canvas id="canvas" width="1950px" height="575px"></canvas>
-              <canvas id="canvasbg" width="1950px" height="575px"></canvas>
+              <canvas id="canvas" width="1950px" height="570px"></canvas>
+              <canvas id="canvasbg" width="1950px" height="570px"></canvas>
               </div>
             </div>
           </div> 
