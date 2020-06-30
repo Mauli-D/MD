@@ -25,7 +25,7 @@ class ContactForm extends Component {
         templateParams,
         'user_wcuXz0TuZLPcDCv7Yn4TQ'
       ).then((response) => {
-        ReactDOM.render(<div class="alert alert-success fade show">
+        ReactDOM.render(<div className="alert alert-success fade show">
         <strong>Success! </strong>Your message has been sent successfully.</div>, document.getElementById('success'));
         },
         (error) => {
