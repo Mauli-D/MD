@@ -44,7 +44,7 @@ class Resume extends React.Component {
             </div>
           </div>
         <div>
-          <a className="btn btn-primary btn-xl" href="MaulikaDesai.pdf" target="_blank" download>Download Resume!</a>     
+          <a className="btn btn-primary btn-xl" href="MaulikaDesai_Resume.pdf" target="_blank" download>Download Resume!</a>     
         </div>
       </section>
     );
