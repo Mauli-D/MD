@@ -1,6 +1,6 @@
 const details = [
     {
-        position: 'Front-end Developer',
+        position: 'Computer Programmer',
         date: 'August 2020 - Present',
         companyName: 'meshMD Inc.',
         responsibilities: [
