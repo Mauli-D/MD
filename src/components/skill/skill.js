@@ -13,8 +13,9 @@ const Skill = props => {
             <div className="wrap text-uppercase">
               <div className="bar cf" data-percent="90%"><span className="label">html</span></div>
               <div className="bar cf" data-percent="90%"><span className="label">css</span></div>
+              <div className="bar cf" data-percent="90%"><span className="label">bootstrap</span></div>
               <div className="bar cf" data-percent="80%"><span className="label">JavaScript</span></div>
-              <div className="bar cf" data-percent="60%"><span className="label">reactjs</span></div>
+              <div className="bar cf" data-percent="70%"><span className="label">reactjs</span></div>
               <div className="bar cf" data-percent="60%"><span className="label">angularjs</span></div>
               <div className="bar cf" data-percent="55%"><span className="label">git</span></div>
               <div className="bar cf" data-percent="50%"><span className="label">ruby on rails</span></div>

@@ -1,5 +1,27 @@
 const details = [
     {
+        position: 'Front-end Developer',
+        date: 'August 2020 - Present',
+        companyName: 'meshMD Inc.',
+        responsibilities: [
+            {
+                res: "Coding applications using the following languages, tools and libraries: .NET Core, React, Redux, JavaScript, jQuery, HTML, CSS, SCSS, Bootstrap." 
+            }, {
+                res: "Developing Reactjs and C# scripts to translate data between applications"
+            }, {
+                res: "Translating designs and wireframes into quality code"
+            }, {
+                res: "Within 2 months created a series of unit tests to ensure the main service passes all the quality benchmarks."
+            }, {
+                res: "Creating API, in C# to fetch json data from database and Responding and fixing issues and bugs that arise."
+            }, {
+                res: "Creating / Modifying applications as result of a Change Requests or Project Briefs."
+            }, {
+                res: "Coordinating with all other teams internal to the company including project, usability, design, and quality assurance."
+            }
+        ],
+    },
+    {
         position: 'Front-end Developer co-op',
         date: 'May 2018 - August 2018',
         companyName: 'Print1',
