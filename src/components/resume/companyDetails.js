@@ -11,7 +11,7 @@ const details = [
             }, {
                 res: "Translating designs and wireframes into quality code"
             }, {
-                res: "Within 2 months created a series of unit tests to ensure the main service passes all the quality benchmarks."
+                res: "Within first 2 months created a series of unit tests to ensure the main service passes all the quality benchmarks."
             }, {
                 res: "Creating API, in C# to fetch json data from database and Responding and fixing issues and bugs that arise."
             }, {
@@ -21,26 +21,6 @@ const details = [
             }
         ],
     },
-    {
-        position: 'Front-end Developer co-op',
-        date: 'May 2018 - August 2018',
-        companyName: 'Print1',
-        responsibilities: [
-            {
-                res: "Worked in different designing tools like Photoshop, Illustrator to create a design." 
-            }, {
-                res: "Made designs using coding in HTML5/CSS3 and JavaScript for websites."
-            }, {
-                res: "Worked with a group of planners and designers to satisfy customers' needs and making Responsive web design."
-            }, {
-                res: "Fixed existing bugs in application."
-            }, {
-                res: "Learned how to work under pressure."
-            }, {
-                res: "Documented recommended system changes through the ticketing system."
-            }
-        ],
-    }, 
     {
         position: 'Software Developer',
         date: 'September 2016 - August 2017',
