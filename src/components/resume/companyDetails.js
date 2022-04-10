@@ -5,15 +5,21 @@ const details = [
         companyName: 'meshMD Inc.',
         responsibilities: [
             {
-                res: "Coding applications using the following languages, tools and libraries: .NET Core, React, Redux, JavaScript, jQuery, HTML, CSS, SCSS, Bootstrap." 
+                res: "Developed the dynamic component in ReactJs to fulfill the functionality of application, which include the fetching and modifying data in database using C# API communicate with service by consuming Restful API, that is reusable for many pages" 
             }, {
-                res: "Developing Reactjs and C# scripts to translate data between applications"
+                res: "Developed the Front-End and User Interface of ARTWorks applications using Javascript, ES6, React, and Redux."
             }, {
-                res: "Translating designs and wireframes into quality code"
+                res: "Working experience on CSS Background, CSS Positioning, CSS Text, CSS Border, CSS Margin, CSS Padding, CSS Table, Pseudo Classes, Pseudo Elements and CSS Behaviours in CSS."
             }, {
-                res: "Within first 2 months created a series of unit tests to ensure the main service passes all the quality benchmarks."
+                res: "Develop and Design the Responsive Web application with dynamic pages using html/html5, SCSS and bootstrap, ReactJs and JavaScript to facilitate the digital transformation of the details of products and services provided by company."
             }, {
-                res: "Creating API, in C# to fetch json data from database and Responding and fixing issues and bugs that arise."
+                res: "Applied redux middleware using redux-promise, redux-thunk and redux-saga."
+            }, {
+                res: "Used various bootstrap components like accordion, date picker, time picker, alert, buttons, modal and also react-bootstrap components."
+            }, {
+                res: "Managed state within the app using Redux and persisted certain parts of the state to device via Redux Persist."
+            }, {
+                res: "Responding and fixing issues and bugs that arise."
             }, {
                 res: "Creating / Modifying applications as result of a Change Requests or Project Briefs."
             }, {
@@ -27,39 +33,22 @@ const details = [
         companyName: 'Kalp Corporate',
         responsibilities: [
             {
-                res: "Used HTML5, CSS, AngularJs, EmberJs and Git for API-based business website advancement."
+                res: "Designed and developed various Web forms using HTML5, CSS3, Bootstrap, JQuery, EmberJs, AngularJs and JavaScript. Experience in using SQL for storing and fetching data in the database."
             }, {
-                res: "Participated in requirement gathering and analysis."
+                res: "Developed various screens for the front end using EmberJs and AngularJs with the use of various predefined components from API using NodeJs and NPM."
             }, {
-                res: "Helped senior developers in complex design project for corporate clients."
+                res: "Involved in writing application-level code to interact with APIs, Web Services using AJAX, JSON."
             }, {
-                res: "Thoroughly studied and understood event module and its mechanism."
+                res: "MVC framework for the back-end while the front-ends were built using the BootStrap Framework and HTML along with jQuery."
             }, {
-                res: "Help all individuals from the relegated office with everyday tasks and uncommon ventures."
-            }, {
-                res: "Provide essential degrees of exertion related to work requests."
+                res: "Participated in requirement gathering and analysis also helped all individuals from the relegated office with everyday tasks and uncommon ventures."
             }, {
                 res: "Communicate with area specialists, clients, and executives all through the product advancement lifecycle."
+            }, {
+                res: "Helped senior developers in complex design project for corporate clients."
             }
         ],
     },
-    {
-        position: 'Intern Software Developer',
-        date: 'July 2016 - September 2016',
-        companyName: 'Atharva System',
-        responsibilities: [
-            {
-                res: "Participate in scheduled events and Complete intern Group project(s), other duties as assigned."
-            }, {
-                res: "Perform troubleshoot and execution examination of code and frameworks."
-            }, {
-                res: "Helped with backend development using Ruby on Rails, web development using HTML/CSS/JavaScript and database SQL."
-            }, {
-                res: "Strong passion demonstrated via energy levels, enthusiasm, creativity, and commitment."
-            },
-        ],
-    }
 ];
-
 
 export default details;
